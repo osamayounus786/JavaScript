@@ -189,12 +189,44 @@
 // console.log(scoreFstudents);
 
 
-var numberss = [34,12,43,556,864,23,435,23,1,0,76,67];
-numberss.sort(function (a,b) {return a - b} );
 
-console.log(numberss);
 
-var points = [40, 100, 1, 5, 25, 10];
-points.sort(function(a, b){return b - a});
+// console.log(points);
+//  var toCheckType = ["Orange","Mango","Peach","BlueBerry"];
+//  var stringtype = "hello";
 
-console.log(points);
+//  console.log(Array.isArray(toCheckType));
+//  console.log(typeof toCheckType);
+// var fruits = ["Orange","Mango","Peach","BlueBerry","Banana","Strawberry"];
+// var favFruits = fruits.slice(3,2);
+// console.log(favFruits);
+
+// var fruits = ['apple', 'banana', 'orange', 'mango', 'watermelon'];
+// var favFruits = fruits.slice(1, 4);
+//  console.log(favFruits, fruits);
+
+//  var bikesName = "honda - Yamaha - Suzuki - SuperStar";
+//  var bikesSplitted = bikesName.split("-");
+// var bikesJoin = bikesName.join("+");
+//  console.log(bikesArr);
+// var nic = "42111:541111:1";
+//  var nicSplitted = nic.split(":");
+//  var nicFormatted = nicSplitted.join("-");
+
+// console.log(nicSplitted , nicFormatted);
+
+
+// var fruits = ["Mango","Banana","Apple","Peach","Grapes"];
+// var Exfruits = ["WaterMellon","Aaru","AluBukhara","Sarda","BlueBerry"];
+// console.log(fruits.concat(Exfruits));
+
+
+
+
+var fruits = ["Mango","Banana","Apple","Peach","Grapes"];
+var toCheck = prompt("Let us know which fruit we have");
+console.log(fruits.indexOf(toCheck));
+console.log(fruits.includes(toCheck));
+
+
+
