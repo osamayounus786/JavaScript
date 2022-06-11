@@ -33,3 +33,18 @@
 
 //     console.log(i + [A]);
 // }
+// 4. You have an array
+// A = [“Nokia”, “Samsung”, “Apple”, “Sony”, “Huawei”]
+// Write each element on new line with the help of for loop.
+
+
+// ask for this to someone 
+mobNames = document.querySelector("#mobiles");
+
+var mobArray = ["Nokia","Samsung","Apple","Sony","Huawei"];
+// mobNames.innerHTML = mobArray;
+// console.log(mobNames.innerHTML);
+for(i = 0; i < mobArray.length; i++){
+    mobNames.innerHTML = mobArray + "<br />";
+    console.log(mobNames.innerHTML + "<br / >");
+}
