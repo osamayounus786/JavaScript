@@ -38,13 +38,36 @@
 // Write each element on new line with the help of for loop.
 
 
+
+
+
+
+
 // ask for this to someone 
 mobNames = document.querySelector("#mobiles");
 
 var mobArray = ["Nokia","Samsung","Apple","Sony","Huawei"];
-// mobNames.innerHTML = mobArray;
-// console.log(mobNames.innerHTML);
+
 for(i = 0; i < mobArray.length; i++){
-    mobNames.innerHTML = mobArray + "<br />";
+    mobNames.innerHTML = mobArray[i];
     console.log(mobNames.innerHTML + "<br / >");
 }
+
+
+// Write a program to print items of the following array using for
+// loop:
+// fruits = [“apple”, “banana”, “mango”, “orange”, “strawberry”]
+
+// var liOffruits = document.querySelector("#listoffruits");
+// var indOfruits = document.querySelector("#indexofFruits");
+
+// fruitsArr = ["Mango","Banana","Peach","Apple","PineApple"];
+// // liOffruits.innerHTML = fruitsArr;
+// // console.log(liOffruits);
+// // console.log("Element at index"+fruitsArr[0]+ " is apple ");
+
+// for(var i = 0; i < fruitsArr.lenght; i++)
+// {
+//     liOffruits.innerHTML = fruitsArr[i];
+//     console.log(liOffruits.innerHTML);
+// }

@@ -148,3 +148,130 @@
 
 
 
+// Write a program that prints number from start of the array
+// to desired stop value. Given array:
+// var scores =[12, 45 , 3, 22, 34, 50];
+// (Hint: take stop value from user)
+// E.g. if user gives 3 as input value print 12, 45, 3
+// if user gives 34 as input value print 12, 45, 3, 22, 34
+
+
+// var scores = [12, 45, 3, 22, 34, 50];
+// var userInput = +prompt("where to stop");
+//  for (i = 0; i <= scores.length; i++){ //12 45 3 22
+//     console.log(scores[i]);
+//     if(userInput === scores[i]){
+//         break;
+       
+//     }
+    
+//  }
+
+// var scores = [12, 45, 3, 22, 34, 50];
+// var userInput = +prompt("where to stop?");
+// var index = scores.indexOf(userInput);
+// for (var i = 0; i <= index; i++) {
+//     console.log(scores[i]);
+// }
+
+
+
+
+// You have an array
+// A = [ [1,2,3] , [4,5,6] , [7,8,9] ]
+// Write each element on new line with the help of nested for
+// loops.
+
+// var numArray = [ 
+//     [1,2,3] , [4,5,6] , [7,8,9]
+//  ];
+
+//  for(i = 0; i < numArray.length; i++){
+// console.log(numArray[i]);
+// }
+// for(j = 0; j<i; j++){
+//     console.log(numArray[j]);
+// }
+
+//  }
+
+
+// not happeing ask how 
+// var userInput = +prompt("input any number to decrease its value by 0.5");
+// for(i = 0; i <=userInput; i - 0.5){
+//     console.log(userInput[i]);
+
+// } 
+// Write a for loop that will iterate from 0 to 20. For each
+// iteration, it will check if the current number is even or odd, and
+// report that to the screen (e.g. "2 is even").
+
+// var inputUser = +prompt("input any number to know the even number ");
+// for(var i = 0; i<= inputUser; i++){
+//      if(inputUser % 2==0){
+//         console.log(inputUser[i]);
+//      }
+     
+// }
+
+
+// for(i =0; i<=50; i++){
+//    console.log(i);
+
+// }
+
+// var cityName = ["Karachi","lahore","Punjab","KPK","Islamabad"];
+// for(i = 0; i<=cityName.length; i++){
+
+//    console.log(cityName[i]);
+// }
+
+
+
+// var firstNames = ["BlueRay ", "Upchuck ", "Lojack ", "Gizmo ", "Do-Rag "];
+//  var lastNames = ["Zzz", "Burp", "Dogbone", "Droop"];
+
+
+//  var fullNames = [];
+
+//  for(var i = 0; i <= firstNames.length; i++){
+//    for(var j = 0; j <= lastNames.length; j++ ){
+//      fullNames.push(firstNames[i] + lastNames[j]);
+      
+//    }
+//  }
+// var cars = ["BMW","Ferrari","Beneli","Harely","Honda"];
+// var messagetoShow = "";
+// for(i = 0; i < cars.length; i++){
+//    messagetoShow += cars[i] + "<br>"; 
+
+// } 
+// document.getElementById("message").innerHTML=messagetoShow;
+
+// const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+
+// let text = "";
+// for (let i = 0; i < cars.length; i++) {
+//   text += cars[i] + "<br>";
+// }
+
+// document.getElementById("message").innerHTML = text;
+
+
+// var emptyMessage = "";
+// for( var i = 0; i < 5; i++){
+// emptyMessage += "this is number" + i + "<br>";
+
+// }
+// document.getElementById("demo").innerHTML = emptyMessage;
+
+
+var fruits = ["Mango","Banana","Apple","Peach"];
+var emptyMessage = "";
+for(var i = 0; i < fruits.length; i++){
+   emptyMessage += fruits[i] + "<br>";
+   
+}
+console.log(emptyMessage);
+document.getElementById("demo").innerHTML = emptyMessage;
+
