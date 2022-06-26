@@ -266,12 +266,156 @@
 // document.getElementById("demo").innerHTML = emptyMessage;
 
 
-var fruits = ["Mango","Banana","Apple","Peach"];
-var emptyMessage = "";
-for(var i = 0; i < fruits.length; i++){
-   emptyMessage += fruits[i] + "<br>";
+// var fruits = ["Mango","Banana","Apple","Peach"];
+// var emptyMessage = "";
+// for(var i = 0; i < fruits.length; i++){
+//    emptyMessage += fruits[i] + "<br>";
    
-}
-console.log(emptyMessage);
-document.getElementById("demo").innerHTML = emptyMessage;
+// }
+// console.log(emptyMessage);
+// document.getElementById("demo").innerHTML = emptyMessage;
 
+
+
+
+
+
+
+
+// var tableName = +prompt("Enter Any table you want to print");
+// var limitOfTable = +prompt("Enter The Lenght of table");
+// var tableInnerName = "";
+// for(i = 1; i <= limitOfTable; i++){
+//   tableInnerName += tableName + " X " + i + " = " + tableName * i + "<br>";
+  
+   
+// }
+// console.log(tableInnerName);
+// document.getElementById("demo").innerHTML = tableInnerName;
+
+
+// var fruits = ["Banana","Mango","Peach","Apple","Strawberry"];
+// var emptyMessage = "";
+// for(i = 0; i < fruits.length; i++){
+//    emptyMessage += "Element at index is" + " " + i + " is " + fruits[i] + "<br>";
+//    console.log(fruits[i]);
+// }
+// document.getElementById("demo").innerHTML = emptyMessage;
+
+
+
+
+
+
+
+
+// Write a program to initialize an array of N items by using
+// prompt. Where N is number of items as entered by the user.
+
+
+
+
+// var index0 = prompt("Write items you want at index 0");
+// var index1 = prompt("Write items you want at index 1");
+// var index2 = prompt("Write items you want at index 2");
+// var index3 = prompt("Write items you want at index 3");
+// var indexArray = [index0,index1,index2,index3];
+// var emptyMessage = "";
+// var numItemss = "";
+// var itemss = "";
+// for( var i = 0; i < indexArray.length; i++){
+//    numItemss += "Number of items" + indexArray.length  + "<br>";
+//    itemss += "Items" + "<br>"
+//    emptyMessage += indexArray[i] + "<br>";
+//    console.log(indexArray[i]);
+// }
+// document.getElementById("numItems").innerHTML = numItemss;
+// document.getElementById("items").innerHTML = itemss;
+// document.getElementById("demo").innerHTML = emptyMessage;
+
+
+
+// document.getElementById("counting").innerHTML = "Counting Items" ;
+
+// var showcountingItems = "";
+// for (i = 1; i <= 20; i++){
+//    showcountingItems += i + ",";
+//    console.log(i);
+   
+// }
+// document.getElementById("showCounting").innerHTML = showcountingItems;
+
+
+
+
+// document.getElementById("even").innerHTML = "Even Numbers" ;
+
+// var showEvenNum = "";
+// for (i = 1; i <= 20; i++){
+//    if(i %2 == 0 ){
+//    showEvenNum += i + ",";
+//    console.log(i);
+//    }
+   
+// }
+// document.getElementById("showEven").innerHTML = showEvenNum;
+
+// document.getElementById("odd").innerHTML = " Odd Numbers" ;
+
+// var showOddNum = "";
+// for (i = 1; i <= 20; i++){
+//    if(i %2 == 1 ){
+//    showOddNum += i + ",";
+//    console.log(i);
+//    }
+   
+// }
+// document.getElementById("showOdd").innerHTML = showOddNum;
+
+
+
+// document.getElementById("series").innerHTML = " Series " ;
+
+// var showSeries = "";
+// for (i = 1; i <= 20; i++){
+//    if(i %2 == 0 ){
+//    showSeries += i + "k,";
+//    console.log(i);
+//    }
+   
+// }
+// document.getElementById("showSeiresp").innerHTML = showSeries;
+
+
+
+
+
+
+
+
+
+let n = 5; // row or column count
+// defining an empty string
+let string = "";
+
+for(let i = 0; i <= n; i++) { // external loop
+  for(let j = 0; j < n; j++) { // internal loop
+    string += "*";
+  }
+  // newline after each row
+  string += "\n";
+}
+// printing the string
+console.log(string);
+
+
+
+// let n = 5;
+// let string = "";
+// for (let i = 0; i <= n; i++) {
+//   for (let j = 0; j < i; j++) {
+//     string += "*";
+//   }
+//   string += "\n";
+// }
+// console.log(string);
