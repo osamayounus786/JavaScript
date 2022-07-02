@@ -140,8 +140,42 @@
 // console.log(cnvNumInStr.toString() + 1);
 
 
+// var mulRandom = Math.random();
+// var mulRandom1 = Math.floor(mulRandom * 11)
+// console.log(mulRandom1 * 10);
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// increasing probability in dice
+// var dice = Math.floor(Math.random() * 10);
+// // console.log(dice);
+// if(dice >=6){
+//     console.log(6);
+// }
+// else{
+//     console.log(dice);
+// }
 
 
 
