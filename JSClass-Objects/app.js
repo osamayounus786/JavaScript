@@ -135,32 +135,51 @@
 
 
 // the task: take input from user donor name donation and dn number and store it in local storage
-// var donorName = document.querySelector("#donor-name");
-// var dnNumber = document.querySelector("#dn-number");
-// var amount = document.querySelector("#donation-amount");
-// var totalamount = 0;
-// var alldonations = [];
+var donorName = document.querySelector("#donor-name");
+var dnNumber = document.querySelector("#dn-number");
+var amount = document.querySelector("#donation-amount");
+var totalamount = 0;
+var alldonations = [];
 
-// function donate(){
-//     totalamount = totalamount + Number(amount.value);
-//     // console.log(donorName.value, dnNumber.value, amount.value);
-// var donor = {
-//     DonorName: donorName.value,
-//     DnNumber: dnNumber.value,
-//     DnAmount: amount.value
-// }
-// alldonations.push(donor)
-// donorName.value= "";
-// dnNumber.value= "";
-// amount.value= "";
-// console.log(alldonations, totalamount);
-// }
-
-
-
-// construct object method
-
-
+function donate(){
+        totalamount = totalamount + Number(amount.value);
+        // console.log(donorName.value, dnNumber.value, amount.value);
+    var donor = {
+            DonorName: donorName.value,
+            DnNumber: dnNumber.value,
+            DnAmount: amount.value
+        }
+        alldonations.push(donor)
+        donorName.value= "";
+        dnNumber.value= "";
+        amount.value= "";
+        console.log(alldonations, totalamount);
+      
+            localStorage.setItem("Donor Name",donor.DonorName);
+            localStorage.setItem("Donor Dn Number",donor.DnNumber);
+            localStorage.setItem("Amount",donor.DnAmount);
+            localStorage.setItem("total Amount",totalamount);
+        // saveInLocalStorage();
+        }
+        // function saveInLocalStorage(){
+        //     localStorage.setItem("Name of donor",donorName.value);
+        //     localStorage.setItem("DNumber of donor",dnNumber.value);
+        //     localStorage.setItem("Donated Amount",amount.value);
+        // }
+        
+        
+        
+        
+        
+        
+        // function donate(){
+        // localStorage.setItem("Name of donor",donorName.value);
+        // localStorage.setItem("DNumber of donor",dnNumber.value);
+        // localStorage.setItem("Donated Amount",amount.value);
+        // }
+        // construct object method
+        
+        
 
 
 
