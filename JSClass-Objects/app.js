@@ -34,25 +34,145 @@
 
 
 
-var appartmentBooking = {
-    name: 'flaknaz green',
-    price: 8500000,
-    westOpenCharges: 300000,
-    corner: 250000,
-    roadFacing: 350000,
-    totalBookingAmount: function (isWestOpen, isCorner, isRoadFacing) {
-        var totalPrice = this.price;
-        if (isWestOpen) {
-            totalPrice = totalPrice + this.westOpenCharges;
-        }
-        if (isCorner) {
-            totalPrice = totalPrice + this.corner;
-        }
-        if (isRoadFacing) {
-            totalPrice = totalPrice + this.roadFacing
-        }
-        console.log(totalPrice);
-    }
+// var appartmentBooking = {
+//     name: 'flaknaz green',
+//     price: 8500000,
+//     westOpenCharges: 300000,
+//     corner: 250000,
+//     roadFacing: 350000,
+//     totalBookingAmount: function (isWestOpen, isCorner, isRoadFacing) {
+//         var totalPrice = this.price;
+//         if (isWestOpen) {
+//             totalPrice = totalPrice + this.westOpenCharges;
+//         }
+//         if (isCorner) {
+//             totalPrice = totalPrice + this.corner;
+//         }
+//         if (isRoadFacing) {
+//             totalPrice = totalPrice + this.roadFacing
+//         }
+//         console.log(totalPrice);
+//     }
+// }
+
+// appartmentBooking.totalBookingAmount(true, true, false);
+
+
+
+
+
+
+
+
+
+
+// temporary
+// var allPlans = [];
+// var plan1 = {
+//     transfer: 1000,
+//     price: 3.99,
+//     space: 100,
+//     pages: 10,
+//     name: "basic",
+//     isCancelable: true,
+//     features: ["SEO", "SSL"],
+//     serverInfo: {
+//         processor: 5.3,
+//         memory: 1
+//     }
+// };
+// console.log(plan1.features);
+// console.log(plan1.serverInfo.memory);
+// plan1.name = "premium";
+// console.log(plan1.name);
+// delete plan1.features;
+// console.log(plan1.features);
+;
+// console.log(allPlans.push(plan1));
+// console.log(allPlans);
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var bike = {
+//     name: "Babe Harley",
+//     color: "grey",
+//     price: 500000,
+//     features: ["digital meter","Petrol Sensor","Break Sensor"],
+//     model: 2022
+// }
+// console.log(bike);
+// console.log(bike.price);
+// delete bike.features;
+// console.log(bike);
+
+
+// var bikeArr = [];
+// totalprice = 0;
+// var bike = {
+//     name: "Babe Harley",
+//     color: "grey",
+//     price: 500000,
+//     features: ["digital meter","Petrol Sensor","Break Sensor"],
+//     model: 2022
+// }
+// bikeArr.push(bike);
+// console.log(bikeArr);
+// console.log(bikeArr[0].name);
+
+
+
+
+
+
+// the task: take input from user donor name donation and dn number and store it in local storage
+// var donorName = document.querySelector("#donor-name");
+// var dnNumber = document.querySelector("#dn-number");
+// var amount = document.querySelector("#donation-amount");
+// var totalamount = 0;
+// var alldonations = [];
+
+// function donate(){
+//     totalamount = totalamount + Number(amount.value);
+//     // console.log(donorName.value, dnNumber.value, amount.value);
+// var donor = {
+//     DonorName: donorName.value,
+//     DnNumber: dnNumber.value,
+//     DnAmount: amount.value
+// }
+// alldonations.push(donor)
+// donorName.value= "";
+// dnNumber.value= "";
+// amount.value= "";
+// console.log(alldonations, totalamount);
+// }
+
+
+
+// construct object method
+
+
+
+
+
+function DonationSys(name,dnNum,dAmount){
+    this.name = name;
+    this.DonorNumber = dnNum;
+    this.DonorAmount = dAmount;
 }
 
-appartmentBooking.totalBookingAmount(true, true, false);
+var donor1 = new DonationSys("osama",786,1000);
+var donor2 = new DonationSys("sameer",896,4000);
+var donor3 = new DonationSys("hassan",900,6000);
+
+
+console.log(donor1,donor2,donor3);
