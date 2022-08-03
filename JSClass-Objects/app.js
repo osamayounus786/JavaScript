@@ -164,15 +164,15 @@
 
 
 
-function DonationSys(name,dnNum,dAmount){
-    this.name = name;
-    this.DonorNumber = dnNum;
-    this.DonorAmount = dAmount;
-}
+// function DonationSys(name,dnNum,dAmount){
+//     this.name = name;
+//     this.DonorNumber = dnNum;
+//     this.DonorAmount = dAmount;
+// }
 
-var donor1 = new DonationSys("osama",786,1000);
-var donor2 = new DonationSys("sameer",896,4000);
-var donor3 = new DonationSys("hassan",900,6000);
+// var donor1 = new DonationSys("osama",786,1000);
+// var donor2 = new DonationSys("sameer",896,4000);
+// var donor3 = new DonationSys("hassan",900,6000);
 
 
-console.log(donor1,donor2,donor3);
+// console.log(donor1,donor2,donor3);
