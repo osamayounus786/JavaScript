@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="container">
+        <div>
+            <p id="screen">0</p>
+        </div>
+        <div class="box">
+            <div>
+            <button onclick="userPress(7)">7</button>
+            <button onclick="userPress(8)">8</button>
+            <button onclick="userPress(9)">9</button>
+            <button onclick="assignOperator('/')">÷</button>
+        </div>
+        <div>
+            <button onclick="userPress(4)">4</button>
+            <button onclick="userPress(5)">5</button>
+            <button onclick="userPress(6)">6</button>
+            <button onclick="assignOperator('*')">x</button>
+        </div>
+        <div>
+            <button onclick="userPress(1)">1</button>
+            <button onclick="userPress(2)">2</button>
+            <button onclick="userPress(3)">3</button>
+            <button onclick="assignOperator('-')">-</button>
+        </div>
+        <div>
+            <button onclick="clearCalc()">C</button>
+            <button onclick="userPress(0)">0</button>
+            <button onclick="evaluateMaths()">=</button>
+            <button onclick="assignOperator('+')">+</button>
+        </div>
+
+
+    </div>
+</div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
