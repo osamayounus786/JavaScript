@@ -95,6 +95,8 @@
 // const num2 = parseInt(prompt('Enter the second number '));
 
 // function addNum(){
+// //     const num1 = parseInt(prompt('Enter the first number '));
+// // const num2 = parseInt(prompt('Enter the second number '));
 
 //     const sum = num1 + num2;
 //     screen.innerHTML = sum;
@@ -103,3 +105,44 @@
 
 // Write a function that takes three arguments num1, num2
 //  & operator & compute the desired operation. Return and show the desired result in your browser.
+
+    // var screen = document.querySelector("#screen");
+    // function addNum(){
+    //     const num1 = parseInt(prompt('Enter the first number '));
+
+    //     const opr =prompt('Enter the operator number ');
+        
+    //     const num2 = parseInt(prompt('Enter the second number '));
+    //     if(opr == '+'){
+    //         const result = num1 + num2;
+    //         screen.innerHTML = result;
+    //     }
+    //     else if(opr == '-'){
+    //         result = num1 - num2;
+    //         screen.innerHTML = result;
+    //     }
+    //     else if(opr == '*'){
+    //         result = num1 * num2;
+    //         screen.innerHTML = result;
+    //     }
+    //     else if(opr == '/'){
+    //         result = num1 / num2;
+    //         screen.innerHTML = result;
+    //     }
+    //     else(
+    //         screen.innerHTML = " put a valid input"
+    //     )
+    // }
+
+
+    
+
+
+
+
+// Write a function that squares its argument.
+
+
+
+// 8.	Write a function that take start and end number
+//  as inputs & display counting in your browser.
