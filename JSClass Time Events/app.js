@@ -17,13 +17,58 @@
 //     errP.innerHTML = "";
 // }, 10000);
 
+// var i = 0;
+
+// setInterval(function(){
+//     console.log(i++);
+// }, 1000);
+
+
+// separate function for setInterval
+
+//  var i = 0;
+// function osama(){
+//     console.log(i);
+//     i++;
+// }
+// setInterval(osama,1000);
+
+// its running continously what is the solution how to stop it ?
+
+
+// var i = 0;
+// function osamayounus(){
+//         console.log(i++);
+//         if ( i > 5){
+//             clearInterval(setTimer);
+//         }
+// }
+// var setTimer = setInterval(osamayounus, 1000);
 
 
 
 
+// function waitingP(){
+//     var waitingPer = document.getElementById("waitingPerson");
+//     waitingPer.innerHTML = "Welcome Person you waited for 5 seconds";
+
+// }
+// setTimeout(waitingP,5000);
+
+// task 
+// set a time for 60 seconds 
+var time = 60;
 
 
+function setTime(){
+    var h1 = document.getElementById("setTime");
+    if(time < 1){
+        clearInterval(stopTime);
+    }
+    h1.innerHTML = time--;
 
+}
+var stopTime = setInterval(setTime,1000);
 
 
 
