@@ -1,3 +1,36 @@
+var laptop = {
+    name: "Lenovo Thinkpad",
+    generation: "3rd",
+    core: "i5",
+    year: 2015,
+    battery: "li-ion",
+    accessories: ['charger','bagpack','sheild'],
+    features: function(waterproof,cover,megacharger){
+       var allfeatures = "50k";
+        var midfeatures = "20k";    
+        if(waterproof === 'Yes' || megacharger === 'Yes'){
+                
+                    console.log("price of laptop is " + allfeatures);
+            }
+            else if (cover === 'No' && megacharger === 'Yes'){
+                console.log("price of laptop is " + midfeatures);
+            }
+    }
+
+}
+laptop.features('Yes','No','Yes');
+laptop.memory = '16GB' // here is how to add new property in an object
+console.log(laptop);
+// console.log(laptop);
+// console.log(laptop.name);
+// console.log(laptop.year)
+// console.log(laptop.features);
+
+
+
+
+
+
 // var pcSpec =  {
 //     name: "Lenovo Thinkpad",
 //     intel: "Core i5 3rd",
