@@ -1,26 +1,30 @@
-var laptop = {
-    name: "Lenovo Thinkpad",
-    generation: "3rd",
-    core: "i5",
-    year: 2015,
-    battery: "li-ion",
-    accessories: ['charger','bagpack','sheild'],
-    features: function(waterproof,cover,megacharger){
-       var allfeatures = "50k";
-        var midfeatures = "20k";    
-        if(waterproof === 'Yes' || megacharger === 'Yes'){
+// var userpick = prompt("Write any property of an obejct");
+// var laptop = {
+//     name: "Lenovo Thinkpad",
+//     generation: "3rd",
+//     core: "i5",
+//     year: 2015,
+//     battery: "li-ion",
+//     accessories: ['charger','bagpack','sheild'],
+//     features: function(waterproof,cover,megacharger){
+//        var allfeatures = "50k";
+//         var midfeatures = "20k";    
+//         if(waterproof === 'Yes' || megacharger === 'Yes'){
                 
-                    console.log("price of laptop is " + allfeatures);
-            }
-            else if (cover === 'No' && megacharger === 'Yes'){
-                console.log("price of laptop is " + midfeatures);
-            }
-    }
+//                     console.log("price of laptop is " + allfeatures);
+//             }
+//             else if (cover === 'No' && megacharger === 'Yes'){
+//                 console.log("price of laptop is " + midfeatures);
+//             }
+//     }
 
-}
-laptop.features('Yes','No','Yes');
-laptop.memory = '16GB' // here is how to add new property in an object
-console.log(laptop);
+// }
+// console.log(laptop[userpick]);
+// console.log(laptop.generation)
+// console.log(laptop['generation'])
+// laptop.features('Yes','No','Yes');
+// laptop.memory = '16GB' // here is how to add new property in an object
+// console.log(laptop);
 // console.log(laptop);
 // console.log(laptop.name);
 // console.log(laptop.year)
@@ -168,32 +172,32 @@ console.log(laptop);
 
 
 // the task: take input from user donor name donation and dn number and store it in local storage
-var donorName = document.querySelector("#donor-name");
-var dnNumber = document.querySelector("#dn-number");
-var amount = document.querySelector("#donation-amount");
-var totalamount = 0;
-var alldonations = [];
+// var donorName = document.querySelector("#donor-name");
+// var dnNumber = document.querySelector("#dn-number");
+// var amount = document.querySelector("#donation-amount");
+// var totalamount = 0;
+// var alldonations = [];
 
-function donate(){
-        totalamount = totalamount + Number(amount.value);
+// function donate(){
+//         totalamount = totalamount + Number(amount.value);
         // console.log(donorName.value, dnNumber.value, amount.value);
-    var donor = {
-            DonorName: donorName.value,
-            DnNumber: dnNumber.value,
-            DnAmount: amount.value
-        }
-        alldonations.push(donor)
-        donorName.value= "";
-        dnNumber.value= "";
-        amount.value= "";
-        console.log(alldonations, totalamount);
+    // var donor = {
+    //         DonorName: donorName.value,
+    //         DnNumber: dnNumber.value,
+    //         DnAmount: amount.value
+    //     }
+    //     alldonations.push(donor)
+    //     donorName.value= "";
+    //     dnNumber.value= "";
+    //     amount.value= "";
+    //     console.log(alldonations, totalamount);
       
-            localStorage.setItem("Donor Name",donor.DonorName);
-            localStorage.setItem("Donor Dn Number",donor.DnNumber);
-            localStorage.setItem("Amount",donor.DnAmount);
-            localStorage.setItem("total Amount",totalamount);
+    //         localStorage.setItem("Donor Name",donor.DonorName);
+    //         localStorage.setItem("Donor Dn Number",donor.DnNumber);
+    //         localStorage.setItem("Amount",donor.DnAmount);
+    //         localStorage.setItem("total Amount",totalamount);
         // saveInLocalStorage();
-        }
+        // }
         // function saveInLocalStorage(){
         //     localStorage.setItem("Name of donor",donorName.value);
         //     localStorage.setItem("DNumber of donor",dnNumber.value);
@@ -228,3 +232,35 @@ function donate(){
 
 
 // console.log(donor1,donor2,donor3);
+
+
+
+
+// var user = {
+//     name: 'osama',
+//     qualification: 'graduate',
+//     height: 6.0
+// }
+
+// for( var info in user){
+//     // console.log(info);
+//     console.log(user[info])
+//     // console.log(info);
+  
+
+// }
+
+
+
+
+var mobile = {
+    brand: "mi",
+    name: "xiaomi redmi 6a",
+    frontCamera: '5mpx',
+    BackCamera: '16mpx',
+    usbport: 4.0,
+}
+
+
+console.log(mobile.brand);
+console.log(mobile['brand']);
