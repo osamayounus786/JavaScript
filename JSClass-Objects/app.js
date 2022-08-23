@@ -250,17 +250,62 @@
 
 // }
 
+// var showMob1 = document.getElementById("showMob");
+// var searchMobile1 = document.getElementById("searchMobile");
+
+// function btnMob(){
+//     var mobile = {
+//         brand: "mi",
+//         name: "xiaomi redmi 6a",
+//         frontCamera: '5mpx',
+//         BackCamera: '16mpx',
+//         usbport: 4.0,
+//     }
+//     var userClick;
+    
+//     showMob1.innerHTML = searchMobile1.value;
+//     if(userClick === 'brand'){
+//             showMob1.innerHTML = mobile['brand'];
+//             console.log(showMob1.innerHTML = searchMobile1.value);
+//     }
+//     // searchMobile1.value = showMob1.innerHTML;
+
+// }
 
 
 
-var mobile = {
-    brand: "mi",
-    name: "xiaomi redmi 6a",
-    frontCamera: '5mpx',
-    BackCamera: '16mpx',
-    usbport: 4.0,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// construct object
+
+
+function Students(stName,stGender,stDob,stNationality){
+    this.name = stName;
+    this.gender = stGender;
+    this.birthday = stDob;
+    this.nationality = stNationality;
 }
+var st1 = new Students("osama","Male","14, OCT","Pakistani");
 
-
-console.log(mobile.brand);
-console.log(mobile['brand']);
+console.log(st1);
