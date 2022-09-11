@@ -300,12 +300,16 @@
 // construct object
 
 
-function Students(stName,stGender,stDob,stNationality){
-    this.name = stName;
-    this.gender = stGender;
-    this.birthday = stDob;
-    this.nationality = stNationality;
-}
-var st1 = new Students("osama","Male","14, OCT","Pakistani");
+// function Students(stName,stGender,stDob,stNationality){
+//     this.name = stName;
+//     this.gender = stGender;
+//     this.birthday = stDob;
+//     this.nationality = stNationality;
+// }
+// var st1 = new Students("osama","Male","14, OCT","Pakistani");
 
-console.log(st1);
+// console.log(st1);
+
+
+
+.
