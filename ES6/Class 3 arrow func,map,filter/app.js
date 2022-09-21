@@ -19,6 +19,27 @@
 
 
 
+// function names(firstName,lastName){
+// console.log(firstName, lastName);
+// }
+// names("osama",'Younus');
+
+
+// function fruits(fruit1 = 'mango',fruit2 = 'banana'){
+//      console.log(fruit1 , fruit2);
+// }
+
+// fruits();
+
+
+
+// let names = (firstName,lastName) =>{
+// console.log(`${firstName} ${lastName}`);
+// }
+// names('osama','younus');
+// let fruits = (fruit1,fruit2) => console.log(`${fruit1} ${fruit2}`);
+
+// fruits('mango','banana');
 
 
 
@@ -92,47 +113,214 @@
 
 
 // just show num greater than 5 
-let numArr = [1,2,3,4,5,6,7,8,9];
-let newNum = numArr.filter (item => item >= 5);
+// let numArr = [1,2,3,4,5,6,7,8,9];
+// let newNum = numArr.filter (item => item >= 5);
 // console.log(numArr,newNum);
 
 
 // even numbers
 
 
-let evenNum = [1,2,3,4,5,6,7,8,9];
-let newEvenNum = evenNum.filter(item => item % 2 == 0);
-// console.log(newEvenNum);
+// let evenNum = [1,2,3,4,5,6,7,8,9];
+// let newEvenNum = evenNum.filter(item => item % 2 == 0);
+// // console.log(newEvenNum);
 
 
 
 
-let reduceNum = [1,2,3,4,5,6,7,8,9];
-let newRenum = reduceNum.reduce((num1,num2,num3) =>{ 
-     return num1 + num2 - num3;
-});
-// console.log(newRenum);
+// let reduceNum = [1,2,3,4,5,6,7,8,9];
+// let newRenum = reduceNum.reduce((num1,num2,num3) =>{ 
+//      return num1 + num2 - num3;
+// });
+// // console.log(newRenum);
 
 
 
 
 // map
-let laptops = ['HP','MacBook','Dell','Lenovo','Asus'];
-let newLaptops = laptops.map(item => item.toLowerCase(laptops));
-console.log(newLaptops);
+// let laptops = ['HP','MacBook','Dell','Lenovo','Asus'];
+// let newLaptops = laptops.map(item => item.toLowerCase(laptops));
+// console.log(newLaptops);
 
 
 // filter
-let oddNums = [1,23,4,5,6,67,9,0,8];
-let oddResult = oddNums.filter(items => items %2 == 1);
-console.log(oddResult);
+// let oddNums = [1,23,4,5,6,67,9,0,8];
+// let oddResult = oddNums.filter(items => items %2 == 1);
+// console.log(oddResult);
 
 
-// reduce
-let primeNum = [1,3,5,7,11,13,19];
-let newPrime = primeNum.reduce((num1,num2) => {
-     return num1 + num2;
-});
-console.log(newPrime);
+// // reduce
+// let primeNum = [1,3,5,7,11,13,19];
+// let newPrime = primeNum.reduce((num1,num2) => {
+//      return num1 + num2;
+// });
+// console.log(newPrime);
+
+// let firstName = ['Akram', 'Aslam', 'Amir', 'Abdullah', 'Muzammil'];
+// let lastName = ["Khan", "Ahmed", "Khan", "Ansari", "Qureshi", "Khan"];
+
+// let fullName = firstName.map(fName => `${fName} ${lastName[Math.floor((Math.random() * 6))]}`);
+// console.log(fullName);
 
 
+
+
+
+
+// let firstName = ['Sameer','Shabbir','Moiz','Hassan','Muzammil'];
+// let lastName = ['Bux','Khan','Billo','Bux','Khan','Billo',];
+
+// let fullName = firstName.map(fName => `${fName} ${lastName[Math.floor(Math.random()*6)]}`);
+
+// console.log(fullName);
+
+
+
+// let khans = fullName.filter(fullName => fullName.split(" ")[1]=== "Khan");
+
+// console.log(khans);
+
+
+
+
+
+
+
+
+// let numbers = [1, 2, 3, 4];
+// // let sum = numbers.reduce((result, num) => result + num, 4);
+// // console.log(sum);
+// let sum = numbers.reduce((result, num) => {
+//     // console.log(result, num);
+//     return result + num
+// }, 5);
+
+// console.log(sum);
+
+
+// let num = [5, 2, 4, 6, 10, 1];
+// let prod = num.reduce((result, num) => result * num, 2);
+// console.log(prod);
+
+
+
+
+// let pets = ['dog', 'chicken', 'cat', 'dog', 'chicken', 'chicken', 'rabbit'];
+// let petsCount = pets.reduce((result, pet) => {
+//     if (result[pet]) {
+//         result[pet]++;
+//     }
+//     else {
+//         result[pet] = 1; //result.rabbit = 1
+//     }
+//     return result;
+// }, {});
+
+// console.log(petsCount);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let num = [5, 2, 4, 20, 9, 1];
+// let largestNum = num.reduce((result, num) => {
+//     if (num > result) {
+//         result = num;
+//     }
+//     return result;
+// });
+// console.log(largestNum);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// JS Every Method
+// let firstNum = [1,2,3,4,5,6];
+// let secNum = [2,5,6];
+
+
+
+// let isSubset = ((arr1,arr2)=>{
+//         return arr2.every(item => arr1.includes(item));
+// });
+
+
+// let resultOfsubset = isSubset(firstNum,secNum);
+// console.log(resultOfsubset);
+
+
+
+
+
+
+
+
+
+let checkIfevenNum = (num) =>{
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+                if(num % 2 === 0){
+                       resolve(); 
+                }
+                else{
+                    reject();
+                }
+        },1000);
+    })
+}
+checkIfevenNum(3)
+
+.then(()=>{
+        console.log("this is an even number");
+})
+
+.catch(()=>{
+    console.error("this is an error");
+})
+
+
+
+
+
+// function checkIfEven(num) {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             if (num % 2 === 0) {
+//                 resolve();
+//             }
+//             else {
+//                 reject();
+//             }
+//         }, 1000);
+//     })
+// }
+
+// checkIfEven(6)
+//     .then(() => {
+//         console.log('Yes it is an even number');
+//     })
+//     .catch(() => {
+//         console.error("this is an odd number");
+//     });
