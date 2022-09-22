@@ -278,27 +278,27 @@
 
 
 
-let checkIfevenNum = (num) =>{
-    return new Promise((resolve,reject)=>{
-        setTimeout(()=>{
-                if(num % 2 === 0){
-                       resolve(); 
-                }
-                else{
-                    reject();
-                }
-        },1000);
-    })
-}
-checkIfevenNum(3)
+// let checkIfevenNum = (num) =>{
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(()=>{
+//                 if(num % 2 === 0){
+//                        resolve(); 
+//                 }
+//                 else{
+//                     reject();
+//                 }
+//         },1000);
+//     })
+// }
+// checkIfevenNum(3)
 
-.then(()=>{
-        console.log("this is an even number");
-})
+// .then(()=>{
+//         console.log("this is an even number");
+// })
 
-.catch(()=>{
-    console.error("this is an error");
-})
+// .catch(()=>{
+//     console.error("this is an error");
+// })
 
 
 
@@ -324,3 +324,48 @@ checkIfevenNum(3)
 //     .catch(() => {
 //         console.error("this is an odd number");
 //     });
+
+
+// let evenNum = (num)=>{
+//         return new Promise((resolve,reject)=>{
+//             setTimeout(()=>{
+//                    if(num % 2 === 0){  
+//                     resolve();
+//                 }
+//                 else{
+//                     reject();
+//                 }
+//             },3000)
+//         })
+// }
+// evenNum(10)
+//     .then(()=>{
+//             console.log("ths is an even number");
+//     })
+//     .catch(() => {
+//         console.error('this is an invalid number');
+//     });
+
+
+
+
+
+// JS Class
+
+class Animal{
+    constructor(name,legsCount,colour){
+    this.name = name;
+    this.legsCount = legsCount;
+    this.colour = colour;
+}
+speak = "bark";
+eat(){
+    console.log(`${this.name} eats bone`);
+}
+}
+
+
+
+let dog = new Animal('dog',4,'white');
+console.log(dog);
+dog.eat();
