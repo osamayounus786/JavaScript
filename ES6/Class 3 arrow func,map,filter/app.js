@@ -352,20 +352,103 @@
 
 // JS Class
 
-class Animal{
-    constructor(name,legsCount,colour){
-    this.name = name;
-    this.legsCount = legsCount;
-    this.colour = colour;
-}
-speak = "bark";
-eat(){
-    console.log(`${this.name} eats bone`);
-}
-}
+// class Animal{
+//     constructor(name,legsCount,colour){
+//     this.name = name;
+//     this.legsCount = legsCount;
+//     this.colour = colour;
+// }
+// speak = "bark";
+// eat(){
+//     console.log(`${this.name} eats bone`);
+// }
+// }
 
 
 
-let dog = new Animal('dog',4,'white');
-console.log(dog);
-dog.eat();
+// let dog = new Animal('dog',4,'white');
+// console.log(dog);
+// dog.eat();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// class Animal{
+//     constructor(animName,legscount){
+//             this.animName = animName;
+//             this.legscount = legscount;
+            
+//     }
+// fast(){
+//     console.log(`${this.animName} runs very fast`);
+// }
+
+// }
+// let cat = new Animal('Cat','4');
+// console.log(cat);
+// cat.fast();
+
+
+// class Rabit extends Animal {
+//     constructor(name, legsCount, speed, quality) {
+//         super(name, legsCount);
+//         this.speed = speed;
+//         this.quality = quality;
+//     }
+// }
+
+// class Turtle extends Animal {
+//     constructor(name, legsCount, quality, specialPower) {
+//         super(name, legsCount);
+//         this.quality = quality;
+//         this.specialPower = specialPower
+//     }
+// }
+
+// let rabit = new Rabit("rabit", 4, "fast", 'hide');
+// let turtle = new Turtle("turtle", 4, 'consistant', "hard shell");
+
+// console.log(rabit, turtle);
+
+
+
+
+
+
+
+
+
+
