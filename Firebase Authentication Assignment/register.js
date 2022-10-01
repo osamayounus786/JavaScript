@@ -1,9 +1,9 @@
-import {app} from "./firebaseconfig.js";
-import { getAuth,createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
+import {auth} from "./firebaseconfig.js";
+import { createUserWithEmailAndPassword, sendEmailVerification, signInWithEmailAndPassword,onAuthStateChanged,signOut,sendPasswordResetEmail } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
 
 
 
-const auth = getAuth(app);
+
 
 let email = document.querySelector("#email");
 let password = document.querySelector("#password");
@@ -14,14 +14,18 @@ register_btn.addEventListener("click",signupUser)
        
        try{
            let user = await createUserWithEmailAndPassword(auth, email.value, password.value)
-           console.log("successfully",user);
+           
+           verifyEmail(); //calling for verifying
     }
     catch(e){
         console.log(e);
     }
 }
-
-
+// verify email 
+async function verifyEmail(){
+  await sendEmailVerification(auth.currentUser);
+  console.log("Please verify your email address");
+}
 
 
 
@@ -34,23 +38,58 @@ register_btn.addEventListener("click",signupUser)
 
 
  let login_btn = document.querySelector("#login_btn");
- login_btn.addEventListener("click",function(){
-    let login_email = document.querySelector("#login_email");
-    let login_password = document.querySelector("#login_password");
-    signInWithEmailAndPassword(auth, login_email.value, login_password.value)
-    .then((userCredential) => {
-      // Signed in 
-      const user = userCredential.user;
-      console.log("successfully loged in ",user)
-      // ...
-    })
-    .catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message;
-      console.log("error",errorMessage);
-    });
- })
-
-
+ let login_email = document.querySelector("#login_email");
+ let login_password = document.querySelector("#login_password");
  
+ login_btn.addEventListener("click",signinUser)
+   async function signinUser(){
+    try{
+       let {user} = await signInWithEmailAndPassword(auth, login_email.value, login_password.value)
+      console.log(user,"logged in successfully");
+    }
+    catch(e){
+      console.log(e);
+    }
+    
+ }
+
+
+ // onAuthStateChanged
+
+ onAuthStateChanged(auth, (user) => {
+  if (user) {
+ console.log('user found', user);
+    const uid = user.uid;
+    // ...
+  } else {
+       console.log('user not found', user)
+  }
+});
   
+
+
+// signout
+
+ let signout_btn = document.querySelector("#signout_btn");
+ signout_btn.addEventListener("click",signOutp);
+ async function signOutp(){
+
+     await signOut(auth);
+   };
+
+
+   //password reset
+    let reset_btn = document.querySelector("#reset_btn");
+    reset_btn.addEventListener("click",resetPassword)
+   async function resetPassword(){
+
+     try{
+       
+       await sendPasswordResetEmail(auth, email.value);
+       console.log("check your email to reset password");
+  }
+  catch(e){
+    console.log(e);
+  }
+   
+}
