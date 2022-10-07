@@ -9,6 +9,7 @@ function loaddata(){
 
             // console.log(this.responseText);
             document.getElementById("load").innerHTML = this.responseText;
+            
         }
     }
 
