@@ -1,5 +1,5 @@
 import { auth } from "./firebaseconfig.js";
-import { signInWithEmailAndPassword,  onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
+import { signInWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
 
 
 let email = document.querySelector("#email");
@@ -12,8 +12,7 @@ async function login() {
     try {
         let { user } = await signInWithEmailAndPassword(auth, email.value, password.value);
         // console.log(user);
-        // location = "./todos.html";
-        console.log("success",user)
+        location = "./todos.html";
     }
     catch (e) {
         console.error(e.message);
@@ -22,15 +21,27 @@ async function login() {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 onAuthStateChanged(auth, (user) => {
     if (user) {
-      // User is signed in, see docs for a list of available properties
-      // https://firebase.google.com/docs/reference/js/firebase.User
+    //  console.log('user found', user);
       const uid = user.uid;
-      console.log("user found");
       // ...
     } else {
-      // User is signed out
-      // ...
+        // console.log('user not found', user)
     }
   });
+
