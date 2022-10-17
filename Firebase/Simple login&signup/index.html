@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Login and Signup</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper fadeInDown">
+      <div id="formContent">
+        <!-- Tabs Titles -->
+        <h2 class="active">Login</h2>
+
+        <!-- Icon -->
+        <div class="fadeIn first">
+          <img src="image/img-01.webp" id="icon" alt="User Icon" />
+        </div>
+
+        <!-- Login Form -->
+        <form>
+          <input
+            type="text"
+            id="email"
+            class="fadeIn second"
+            name="login"
+            placeholder="Email"
+          />
+          <input
+            type="password"
+            id="password"
+            class="fadeIn third"
+            name="login"
+            placeholder="Password"
+          />
+          <input type="submit" class="fadeIn fourth" value="Log In" />
+        </form>
+
+        <!-- Remind Passowrd -->
+        <div id="formFooter">
+            <p>Don't have account ? Please <a href="signup.html">Signup</a> first</p>
+          <a class="underlineHover" href="#">Forgot Password?</a><br />
+
+          <a style="font-weight: lighter; size: 3px; color: black"
+            > @Osama Younus</a
+          >
+        </div>
+      </div>
+    </div>
+
+
+    <script type="module" src="firebaseconfig.js"></script>
+  </body>
+</html>
