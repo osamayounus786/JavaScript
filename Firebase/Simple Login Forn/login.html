@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body >
+   <div class="container">
+          <form class="in-container">
+            <div class="child-container">
+              <h1>LOG IN</h1>
+      
+              <label >
+                Email: <input id="email" type="email" placeholder="E-mail">
+              </label>
+           
+            
+              <label for="password">
+                Password:
+                <input
+                
+                id="password" type="password" placeholder="**********">
+                
+              </label>
+            
+            
+              <button id="click"
+                type="button">
+                LOG IN
+              </button>
+              <h4 id="forgot" >
+                Forgot Password?
+              </h4>
+            </div>
+          </form>
+        </div>
+  <script type="module">
+    import { auth } from "./config.js";
+    import { signInWithEmailAndPassword, sendPasswordResetEmail , onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
+    let click = document.getElementById("click");
+    let email = document.getElementById("email");
+    let password = document.getElementById("password");
+    let forgot = document.getElementById("forgot");
+    click.addEventListener("click", () => {
+      signInWithEmailAndPassword(auth, email.value, password.value)
+        .then((userCredential) => {
+          // Signed in 
+          window.location = "./todos.html";
+          const user = userCredential.user;
+          // ...
+          console.log(user);
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          console.log(errorMessage);
+          alert("please Register First");
+        });
+    })
+    forgot.addEventListener("click", () => {
+      sendPasswordResetEmail(auth, email.value)
+        .then(() => {
+          // Password reset email sent!
+          // ..
+          alert("Password reset email sent!")
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          alert("enter email first");
+          // ..
+        });
+    })
+    onAuthStateChanged(auth, (user) => {
+  if (user) {
+    const uid = user.uid;
+    // ...
+  } else {
+  }
+});
+  </script>
+</body>
+
+</html>
