@@ -1,21 +1,15 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
-import { getAuth } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
-import { getFirestore } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js";
-
-
-
-
-
-const firebaseConfig = {
-  apiKey: "AIzaSyBegFC0zOeO4Cd3Af5gVTh_-SlmGIdnVr8",
-  authDomain: "fir-todo-app-d0587.firebaseapp.com",
-  projectId: "fir-todo-app-d0587",
-  storageBucket: "fir-todo-app-d0587.appspot.com",
-  messagingSenderId: "1070653619681",
-  appId: "1:1070653619681:web:bc7b27738eeace8df026a0"
-};
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-app.js";
+  import { getAuth } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-auth.js";
+ 
+  const firebaseConfig = {
+    apiKey: "AIzaSyArWxUemkVd6A86Zy7GT4GXFQ_hHIvlLRY",
+    authDomain: "simple-login-form-51161.firebaseapp.com",
+    projectId: "simple-login-form-51161",
+    storageBucket: "simple-login-form-51161.appspot.com",
+    messagingSenderId: "533463497704",
+    appId: "1:533463497704:web:19ffe5cb5ac0248c34425d"
+  };
 
 
 export const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
-export const db = getFirestore(app);
