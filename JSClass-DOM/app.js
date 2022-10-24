@@ -21,27 +21,32 @@
 // userInput.value = "";
 // }
 
-var newTodo = document.getElementById("todo");
-var ol = document.getElementById("todo-list");
-function addTodo() {
-    var li = document.createElement("LI");
-    var todoNode = document.createTextNode(newTodo.value);
-    li.appendChild(todoNode);
-    var btn = document.createElement("BUTTON");
-    var btnTextNode = document.createTextNode('Delete');
-    btn.appendChild(btnTextNode);
-    btn.setAttribute('onclick', "deleteTodo()")
-    li.appendChild(btn)
-    ol.appendChild(li);
-    newTodo.value = '';
-}
+// var newTodo = document.getElementById("todo");
+// var ol = document.getElementById("todo-list");
+// function addTodo() {
+//     var li = document.createElement("LI");
+//     var todoNode = document.createTextNode(newTodo.value);
+//     li.appendChild(todoNode);
+//     var btn = document.createElement("BUTTON");
+//     var btnTextNode = document.createTextNode('Delete');
+//     btn.appendChild(btnTextNode);
+//     btn.setAttribute('onclick', "deleteTodo()")
+//     li.appendChild(btn)
+//     ol.appendChild(li);
+//     newTodo.value = '';
+// }
 
 
-function deleteAll() {
-    // ol.removeChild(ol.childNodes[1]);
-    ol.innerHTML = ""
-}
+// function deleteAll() {
+//     // ol.removeChild(ol.childNodes[1]);
+//     ol.innerHTML = ""
+// }
 
-function deleteTodo(){
-    console.log(ol.childNodes[3]);
-}
+// function deleteTodo(){
+//     console.log(ol.childNodes[3]);
+// }
+
+
+
+console.log(document.body);
+console.log(document.getElementsByClassName("inputEl"));
