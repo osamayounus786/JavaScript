@@ -50,3 +50,5 @@
 
 console.log(document.body);
 console.log(document.getElementsByClassName("inputEl"));
+
+// code to do right now 
