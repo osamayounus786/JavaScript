@@ -47,7 +47,10 @@
 // }
 
 
+    // code with harr class 
 
+
+    
 console.log(document.body);
 console.log(document.getElementsByClassName("inputEl"));
 
