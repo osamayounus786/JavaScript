@@ -53,8 +53,11 @@
     
 // console.log(document.body);
 // console.log(document.getElementsByClassName("inputEl"));
-let check = document.querySelector(".check");
-console.log(document.TEXT_NODE);
+// let check = document.querySelector(".check");
+// console.log(document.TEXT_NODE);
 
 
 // code to do right now 
+
+console.log(document.body.firstElementChild);
+
