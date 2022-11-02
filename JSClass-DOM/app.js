@@ -60,4 +60,6 @@
 // code to do right now 
 
 console.log(document.body.firstElementChild);
+let para = document.querySelector(".para");
+console.log(para.innerHTML = "hello this is innerHTMl");
 
